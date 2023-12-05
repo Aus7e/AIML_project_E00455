@@ -10,6 +10,11 @@ Gianmarco Mancini
 **[Section 1] Introduction**
 
 We were given a dataset about customers’ satisfaction of ThomasTrain company. The main goal was to predict whether a customer is satisfied (so a binary classification task), however, it might be beneficial to understand also what are the main drivers of customer satisfaction so that for example a company knows what to improve to enhance customer satisfaction.
+&nbsp;
+
+&nbsp;
+
+&nbsp;
 
 
 **[Section 2] Methods**
@@ -19,9 +24,11 @@ We decided to use 2 relatively simple algorithms suitable for binary classificat
 The decision tree model with default parameters performed relatively well with the accuracy of 95% (recall, precision and f1 score were always almost identical as the accuracy so from now on we will mention only the accuracy) on the test set, however, since its accuracy on the train set was 100%, it was very likely overfitted and it was beneficial to tune its hyperparameters to avoid it. For hyperparameter tuning we used a randomized search instead of grid search because the grid search was taking too long to run because of the big grid and relatively large dataset. After doing so, we increased most of the performance metrics by approximately 0.01 so in our opinion the model was performing relatively well. Finally, we calculated and plotted feature importance to see which features contributed the most to the user satisfaction - Food'n'Drink Rating, Delay Change, Work or Leisure and Legroom Service Rating.
 The default random forest model was even more accurate with the accuracy of 96% on the test set. After hyperparameter tuning, we got almost identical results, but the reason could be that again, we used randomized search instead of grid search. Regarding feature importance, the results were very similar to decision tree model – the winners were Delay Change, Food'n'Drink Rating, Seat Comfort Rating, Work or Leisure and Legroom Service Rating, while the least important was again the Track Location Rating.
 When fitting the default logistic regression model we had to increate max number of iterations so that the algorithm converges. The obtained test set accuracy was 88 %. For the hyperparameter tuning, we could use grid search since the logistic regression is easier to fit compared to for example random forest. After doing that, we had a slightly better model, but not significantly, the accuracy was still 88%.
+&nbsp;
 
+&nbsp;
 
-
+&nbsp;
 
 
 **[Section 3] Experimental Design**
@@ -39,10 +46,11 @@ When fitting the default logistic regression model we had to increate max number
     quite sensitive to it. We tried several combinations of the model inputs and compared its confusion 
     matrix / accuracy, however, the most accurate result was the one where we used the same features as in 
     previous models.
+&nbsp;
 
+&nbsp;
 
-
-
+&nbsp;
 
 
 **[Section 4] Results**
@@ -58,10 +66,16 @@ If we want to predict whether a customer will be satisfied, the most accurate mo
 
 <img width="454" alt="image" src="https://github.com/Aus7e/AIML_project_E00455/assets/92274266/6c06f123-97af-4b12-8b09-ce78094fcad5">
 
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
 
 **[Section 5] Conclusions**
 
-The main findings were described in the previous section. Potential areas for improvement include mainly more robust hyperparameter tuning (if we wanted to run it for hours, it if possible we would achieve better confusion matrix) and probably also very careful feature selection in logistic regression (however, we do not have sufficient knowledge in this area). Potential follow-up is for example to dive deeper into how to increase satisfaction of particular subsets of our customers (we can see that when they travel for leisure and not for work, they are very unlikely to be satisfied, but how can we improve this – is it the same way as for the whole dataset or is there anything specific for this subset?)
+The main findings were described in the previous section. Potential areas for improvement include mainly more robust hyperparameter tuning (if we wanted to run it for hours, it is possible we would achieve better confusion matrix) and probably also very careful feature selection in logistic regression (however, we do not have sufficient knowledge in this area). Potential follow-up is for example to dive deeper into how to increase satisfaction of particular subsets of our customers (we can see that when they travel for leisure and not for work, they are very unlikely to be satisfied, but how can we improve this – is it the same way as for the whole dataset or is there anything specific for this subset?).
 
 
 
