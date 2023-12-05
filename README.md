@@ -1,8 +1,8 @@
 # AIML_project_E00455
 
 
-Jan Hybl
-Alessandro Maria Austeri
+Jan Hybl           
+Alessandro Maria Austeri           
 Gianmarco Mancini
 
 # Project_1_Trains
