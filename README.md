@@ -56,11 +56,7 @@ If we want to predict whether a customer will be satisfied, the most accurate mo
 
 **[Section 5] Conclusions**
 
-The main findings were described in the previous section. Potential areas for improvement include mainly more robust hyperparameter tuning (if we wanted to run it for hours, it if possible we would achieve better confusion matrix) and probably also very careful feature selection in logistic regression (however, we do not have sufficient knowledge in this area). Potential follow-up is for example to dive deeper into how to increase satisfaction of particular subsets of our customers (we can see that when they travel for leisure and not for work, they are very unlikely to be satisfied, but how can we improve this – is it the same way as for the whole dataset or is there anything specific for this subset?).![image](https://github.com/Aus7e/AIML_project_E00455/assets/92274266/be35d4ca-fe3c-4991-8ddb-e0f0aecd4a2e)
+The main findings were described in the previous section. Potential areas for improvement include mainly more robust hyperparameter tuning (if we wanted to run it for hours, it if possible we would achieve better confusion matrix) and probably also very careful feature selection in logistic regression (however, we do not have sufficient knowledge in this area). Potential follow-up is for example to dive deeper into how to increase satisfaction of particular subsets of our customers (we can see that when they travel for leisure and not for work, they are very unlikely to be satisfied, but how can we improve this – is it the same way as for the whole dataset or is there anything specific for this subset?)
 
-
-
-
-**[Section 5]**
 
 
