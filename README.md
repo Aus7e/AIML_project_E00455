@@ -43,7 +43,13 @@ We decided to use 2 relatively simple algorithms suitable for binary classificat
 **[Section 4] Results**
 
 If we want to predict whether a customer will be satisfied, the most accurate model will be our random forest with the accuracy of (and other common metrics close to) 96%. However, maybe it is more useful to understand what the main drivers of the user satisfaction are so that the company knows what to focus on if they want to increase it. Among those that the company can affect (we do not assume it can significantly influence for example the delay) we can mention food and drink quality and general comfort (both legroom service as well as seat comfort). On the other hand, it would be probably just a waste of resources to try to affect for example a track location. We can see the details in the following graphs:
+
+
+
+
 <img width="454" alt="image" src="https://github.com/Aus7e/AIML_project_E00455/assets/92274266/a261eb18-0829-4eaa-8213-bade6db4c735">
+
+
 
 <img width="454" alt="image" src="https://github.com/Aus7e/AIML_project_E00455/assets/92274266/6c06f123-97af-4b12-8b09-ce78094fcad5">
 
