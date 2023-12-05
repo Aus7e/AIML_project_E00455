@@ -12,11 +12,6 @@ Gianmarco Mancini
 We were given a dataset about customers’ satisfaction of ThomasTrain company. The main goal was to predict whether a customer is satisfied (so a binary classification task), however, it might be beneficial to understand also what are the main drivers of customer satisfaction so that for example a company knows what to improve to enhance customer satisfaction.
 &nbsp;
 
-&nbsp;
-
-&nbsp;
-
-
 **[Section 2] Methods**
 
 The dataset consists of 129880 observations and 25 attributes (which are described in detail in the project assignment). Since there are only 393 missing values (0.3% of the dataset) we decided to simply drop them. After that, we checked for duplicates (not present), converted target Y/N variable into 1/0 variable so that we can see for example a correlation or mean and inspected all the numeric data, to check that all the values are in expected or reasonable ranges. We dropped useless Ticket ID column and converted Date and Time from categorical form into datetime format so that we could later try to extract useful information. After that, we plotted histograms of categorical and rating features with the proportion of satisfied customers on each category/rating which gave us valuable insights into potential predictive power of such variables. Then, we plotted pair plots of remaining numeric variables to get deeper insights into relationships of these variables. The next step was to calculate all the possible correlations to see which explanatory variables are unusually significantly correlated and also to confirm which of the features were very likely going to be able to explain whether the customer is satisfied or not. Since departure and arrival delays very extremely correlated, we dropped arrival delay, however, we thought it might be interesting to derive a new column – delay change calculated as a difference between arrival and departure delay. The next step was to check the distributions of remaining float variables and remove the most significant outliers. After that, we extracted the information about month, weekday and hour, but after plotting these variables together with the proportion of satisfied clients we did not see any useful pattern, so we dropped them. Finally, we converted categorical variables into dummy variables and were ready to start building our models.
@@ -34,11 +29,6 @@ The default random forest model was even more accurate with the accuracy of 96% 
 When fitting the default logistic regression model we had to increate max number of iterations so that the algorithm converges. The obtained test set accuracy was 88 %. For the hyperparameter tuning, we could use grid search since the logistic regression is easier to fit compared to for example random forest. After doing that, we had a slightly better model, but not significantly, the accuracy was still 88%.
 &nbsp;
 
-&nbsp;
-
-&nbsp;
-
-
 **[Section 3] Experimental Design**
 
 1)	As it was already mentioned above, during EDA, we extracted information about Month, Weekday (Monday,        Tuesday,…) and Hour to see if it can help us better predict the result (for example on Mondays or            morning hours the trains tend to be more crowded which could negatively impact the customer           
@@ -55,11 +45,6 @@ When fitting the default logistic regression model we had to increate max number
     matrix / accuracy, however, the most accurate result was the one where we used the same features as in 
     previous models.
 &nbsp;
-
-&nbsp;
-
-&nbsp;
-
 
 **[Section 4] Results**
 
